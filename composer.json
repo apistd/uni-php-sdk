@@ -1,0 +1,23 @@
+{
+    "name": "apistd/uni-sdk",
+    "description": "Uni SDK for php",
+    "type": "library",
+    "homepage": "https://github.com/apistd/uni-php-sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Acathur",
+            "email": "i@acathur.com",
+            "homepage": "https://github.com/acathur",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uni\\": "./src/Uni"
+        }
+    }
+}
