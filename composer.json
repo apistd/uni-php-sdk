@@ -1,6 +1,7 @@
 {
     "name": "apistd/uni-sdk",
     "description": "Uni SDK for php",
+    "keywords": ["Uni", "sdk", "UniSMS", "SMS", "Messaging"],
     "type": "library",
     "homepage": "https://github.com/apistd/uni-php-sdk",
     "license": "MIT",
@@ -13,8 +14,10 @@
         }
     ],
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.0",
+        "ext-curl": "*"
     },
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Uni\\": "./src/Uni"
