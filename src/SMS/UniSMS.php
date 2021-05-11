@@ -1,6 +1,7 @@
 <?php
 
 namespace Uni\SMS;
+
 use Uni\Common\Uni;
 
 class UniSMS {

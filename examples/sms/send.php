@@ -1,7 +1,9 @@
 <?php
 
-require_once './src/Uni/common.php';
-require_once './src/Uni/sms.php';
+require_once './src/Common/Uni.php';
+require_once './src/Common/UniException.php';
+require_once './src/Common/UniResponse.php';
+require_once './src/SMS/UniSMS.php';
 
 use Uni\Common\UniException;
 use Uni\SMS\UniSMS;

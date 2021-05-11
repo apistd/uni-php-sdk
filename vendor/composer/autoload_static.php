@@ -22,6 +22,10 @@ class ComposerStaticInit2d8dec2e09d717c141501a5ee3244ab9
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Uni\\Common\\Uni' => __DIR__ . '/../..' . '/src/Common/Uni.php',
+        'Uni\\Common\\UniException' => __DIR__ . '/../..' . '/src/Common/UniException.php',
+        'Uni\\Common\\UniResponse' => __DIR__ . '/../..' . '/src/Common/UniResponse.php',
+        'Uni\\SMS\\UniSMS' => __DIR__ . '/../..' . '/src/SMS/UniSMS.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

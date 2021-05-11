@@ -20,7 +20,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Uni\\": "./src/Uni"
+            "Uni\\": "./src/"
         }
     }
 }

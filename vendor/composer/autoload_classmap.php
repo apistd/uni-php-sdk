@@ -7,4 +7,8 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Uni\\Common\\Uni' => $baseDir . '/src/Common/Uni.php',
+    'Uni\\Common\\UniException' => $baseDir . '/src/Common/UniException.php',
+    'Uni\\Common\\UniResponse' => $baseDir . '/src/Common/UniResponse.php',
+    'Uni\\SMS\\UniSMS' => $baseDir . '/src/SMS/UniSMS.php',
 );
