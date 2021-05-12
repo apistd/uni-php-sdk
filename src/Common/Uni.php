@@ -6,8 +6,15 @@ use Uni\Common\UniResponse;
 
 class Uni {
   const NAME = 'uni-php-sdk';
-  const VERSION = '0.0.1';
+  const VERSION = '0.0.5';
   const USER_AGENT = self::NAME . '/' . self::VERSION;
+
+  public $endpoint;
+  public $accessKeyId;
+  public $signingAlgorithm;
+  public $hmacAlgorithm;
+
+  private $accessKeySecret;
 
   function __construct($config) {
     $this->endpoint = $config['endpoint'] ?: 'https://uni.apistd.com';

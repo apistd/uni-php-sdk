@@ -3,10 +3,10 @@
 namespace Uni\Common;
 
 class UniException extends \Exception {
-  protected $requestId;
-  protected $code;
+  public $code;
+  public $requestId;
 
-  function __construct($code = '', $message = '',  $requestId = '') {
+  function __construct($code = '', $message = '', $requestId = '') {
     parent::__construct($message, 0);
     $this->code = $code;
     $this->requestId = $requestId;
