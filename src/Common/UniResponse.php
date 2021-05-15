@@ -22,7 +22,7 @@ class UniResponse {
     $code = $data->code;
 
     if ($code != 0) {
-      throw new UniException($code, $data->message, $this->requestId);
+      throw new UniException($data->message, $code, $this->requestId);
     }
 
     $this->code = $code;

@@ -6,7 +6,7 @@ use Uni\Common\UniResponse;
 
 class Uni {
   const NAME = 'uni-php-sdk';
-  const VERSION = '0.0.5';
+  const VERSION = '0.0.6';
   const USER_AGENT = self::NAME . '/' . self::VERSION;
 
   public $endpoint;
