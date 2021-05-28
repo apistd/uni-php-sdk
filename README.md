@@ -56,5 +56,6 @@ var_dump($resp->data);
 ### 其他语言 SDK
 
 - [Java](https://github.com/apistd/uni-java-sdk)
+- [Go](https://github.com/apistd/uni-go-sdk)
 - [Node.js](https://github.com/apistd/unisms-node-sdk)
 - [Python](https://github.com/apistd/uni-python-sdk)
