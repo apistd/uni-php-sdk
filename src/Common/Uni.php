@@ -6,7 +6,7 @@ use Uni\Common\UniResponse;
 
 class Uni {
   const NAME = 'uni-php-sdk';
-  const VERSION = '0.0.7';
+  const VERSION = '0.0.8';
   const USER_AGENT = self::NAME . '/' . self::VERSION;
 
   public $endpoint;
@@ -19,7 +19,7 @@ class Uni {
   function __construct($config) {
     $this->endpoint = $config['endpoint'] ?? 'https://uni.apistd.com';
     $this->accessKeyId = $config['accessKeyId'];
-    $this->accessKeySecret = $config['accessKeySecret'];
+    $this->accessKeySecret = $config['accessKeySecret'] ?? null;
     $this->signingAlgorithm = $config['signingAlgorithm'] ?? 'hmac-sha256';
     $this->hmacAlgorithm = explode('-', $this->signingAlgorithm)[1];
   }

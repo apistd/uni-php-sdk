@@ -16,7 +16,7 @@ class UniResponse {
   function __construct($resp) {
     list($raw_headers, $raw_body) = explode("\r\n\r\n", $resp, 2);
     $this->headers = $this->parse_headers($raw_headers);
-    $this->requestId = $this->headers[self::REQUEST_ID_HEADER_KEY];
+    $this->requestId = $this->headers[self::REQUEST_ID_HEADER_KEY] ?? null;
 
     $data = json_decode($raw_body);
     $code = $data->code;
