@@ -43,11 +43,10 @@ try {
       'code' => 7777
     ]
   ]);
+  var_dump($resp->data);
 } catch (UniException $e) {
   print_r($e);
 }
-
-var_dump($resp->data);
 
 ```
 
